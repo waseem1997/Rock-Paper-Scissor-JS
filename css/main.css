@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700'); /* import font from google font */
+
+* { /*  universal selectors:
+		those rules will be applied to the whole page; */
+
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #262632;
+}
+
+/* header styling */
+
+header {
+	background-color: white;
+	padding: 20px; 
+}
+
+header > h1 { /* the h2 that inside the header (first child) */
+	color: #262632;
+	text-align: center;
+	font-family: Asap, sans-serif; /* font, backup font */
+}
+
+/* End header styling */
+
+/* start score board */
+
+.score-board {
+	border: 3px solid white;
+	width: 200px; /* 15% of parent width */
+	height: 15%;
+	margin: 20px auto; /* 20px: top and bottom, auto: center in parent; */
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	font-size: 46px;
+	padding: 10px;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.badge {
+	background: #f76060;
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+	padding: 2px 10px;
+	width: 60px;
+	font-family: Asap, sans-serif;
+}
+
+#computer-label {
+	position: absolute;
+	top: 30px;
+	right: -30px;
+}
+
+#user-label {
+	position: absolute;
+	top: 30px;
+	left: -30px;
+}
+
+
+/* End score board */
+
+/* start result */
+
+.result {
+	color: white;
+	font-size: 30px;
+	margin: 10px;
+}
+
+.result > p{
+	font-family: Asap, sans-serif;
+	text-align: center;
+	font-weight: bold;
+
+}
+/* end result */
+
+/* start choices */
+
+.choices {
+	text-align: center; /* set all the content at the center of the div */ 
+	margin: 30px 0;
+
+}
+
+.choice {
+	display: inline-block; /* display them in horizontal order */
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 10px;
+	margin: 0 10px; /* top and bottom, right and left  */
+	transition: all 1s ease; /* to make the movements slower and give it animation */
+}
+
+.choice:hover { /* on hover */
+	background: rgba(255, 10, 10, .5); /* change the background color */
+	cursor: pointer; /* to show that its clickable */ 
+}
+
+/* end choices */
+
+/* action message */
+
+#action-message {
+	text-align: center;
+	color: white;
+	font-family: Asap, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* end action message */
+
+
+/* glow classes */
+
+.red-glow{
+	border : 3px solid red;
+	box-shadow: 0 0 10px red;
+}
+
+.green-glow{
+	border: 3px solid green;
+	box-shadow: 0 0 10px green;
+}
+
+.gray-glow {
+	border: 3px solid gray;
+	box-shadow: 0 0 10px gray;
+}
+
+/* end glow classes */
